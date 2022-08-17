@@ -1,3 +1,4 @@
+import request from '@/utils/request'
 /**
  * Created by PanJiaChen on 16/11/18.
  */
@@ -114,4 +115,16 @@ export function param2Obj(url) {
     }
   })
   return obj
+}
+export function uploadFile(url,file){
+  const formData = new FormData();
+  formData.append('file',file);
+  return request({
+    url:url,
+    method:'post',
+    headers:{
+      'Content-Type': 'multipart/form-data'
+    },
+    data:formData
+  })
 }

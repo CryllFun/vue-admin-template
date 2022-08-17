@@ -26,10 +26,7 @@ module.exports = {
     "vue/name-property-casing": ["error", "PascalCase"],
     "vue/no-v-html": "off",
     'accessor-pairs': 2,
-    'arrow-spacing': [2, {
-      'before': true,
-      'after': true
-    }],
+    'arrow-spacing': 0,
     'block-spacing': [2, 'always'],
     'brace-style': [2, '1tbs', {
       'allowSingleLine': true
@@ -38,10 +35,7 @@ module.exports = {
       'properties': 'always'
     }],
     'comma-dangle': [2, 'never'],
-    'comma-spacing': [2, {
-      'before': false,
-      'after': true
-    }],
+    'comma-spacing': 0,
     'comma-style': [2, 'last'],
     'constructor-super': 2,
     'curly': [2, 'multi-line'],
@@ -53,14 +47,9 @@ module.exports = {
       'after': true
     }],
     'handle-callback-err': [2, '^(err|error)$'],
-    'indent': [2, 2, {
-      'SwitchCase': 1
-    }],
+    'indent': 0,
     'jsx-quotes': [2, 'prefer-single'],
-    'key-spacing': [2, {
-      'beforeColon': false,
-      'afterColon': true
-    }],
+    'key-spacing':0,
     'keyword-spacing': [2, {
       'before': true,
       'after': true
@@ -142,10 +131,7 @@ module.exports = {
     }],
     'no-unreachable': 2,
     'no-unsafe-finally': 2,
-    'no-unused-vars': [2, {
-      'vars': 'all',
-      'args': 'none'
-    }],
+    'no-unused-vars': 0,
     'no-useless-call': 2,
     'no-useless-computed-key': 2,
     'no-useless-constructor': 2,
@@ -166,15 +152,12 @@ module.exports = {
       'avoidEscape': true,
       'allowTemplateLiterals': true
     }],
-    'semi': [2, 'never'],
-    'semi-spacing': [2, {
-      'before': false,
-      'after': true
-    }],
-    'space-before-blocks': [2, 'always'],
+    'semi': 0,
+    'semi-spacing': 0,
+    'space-before-blocks':0,
     'space-before-function-paren': [2, 'never'],
-    'space-in-parens': [2, 'never'],
-    'space-infix-ops': 2,
+    'space-in-parens': 0,
+    'space-infix-ops': 0,
     'space-unary-ops': [2, {
       'words': true,
       'nonwords': false
@@ -190,9 +173,7 @@ module.exports = {
     'yoda': [2, 'never'],
     'prefer-const': 2,
     'no-debugger': process.env.NODE_ENV === 'production' ? 2 : 0,
-    'object-curly-spacing': [2, 'always', {
-      objectsInObjects: false
-    }],
+    'object-curly-spacing': 0,
     'array-bracket-spacing': [2, 'never']
   }
 }
